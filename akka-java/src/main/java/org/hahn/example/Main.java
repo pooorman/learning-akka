@@ -34,6 +34,6 @@ public class Main {
 
         ActorRef greetPrinter = system.actorOf(Props.create(GreetPrinter.class));
 
-        system.scheduler().schedule(Duration.Zero(), Duration.create(1, TimeUnit.SECONDS), greeter, new Greet(), system.dispatcher(), greetPrinter);
+        // system.scheduler().schedule(Duration.Zero(), Duration.create(1, TimeUnit.SECONDS), greeter, new Greet(), system.dispatcher(), greetPrinter);
     }
 }
