@@ -9,7 +9,7 @@ import hahn.learning.akka.spider.Message
 class ExtractContent extends Actor {
 
   def receive = {
-    case Message.Extract(url, content) => println(s"${url}\t${content.length}")
+    case Message.Extract(url, content) => println(s"Extract: ${url}\t${content.length}")
     case _ => println("Error ExtractContent")
   }
 
