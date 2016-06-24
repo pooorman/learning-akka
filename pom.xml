@@ -12,6 +12,7 @@
     <modules>
         <module>akka-java</module>
         <module>akka-scala</module>
+        <module>spray-cache</module>
     </modules>
 
 </project>
